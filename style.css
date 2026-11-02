@@ -552,3 +552,13 @@ h1, h2, h3, p { overflow-wrap: break-word; }
   html { scroll-behavior: auto; }
   .post-polaroid { transition: none; }
 }
+
+
+.hero-image {
+    width: 100%;
+    aspect-ratio: 4 / 4.5;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
