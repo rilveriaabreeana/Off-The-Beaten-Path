@@ -1,0 +1,563 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beyond the Spreadsheet | Off the Beaten Path</title>
+<link rel="stylesheet" href="../style.css">
+
+<style>
+:root {
+    --pink: #F8E5ED;
+    --rose: #C15F85;
+    --burgundy: #702D4B;
+    --background: #FFFDFB;
+    --text: #30252B;
+    --muted: #766A70;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    background: var(--background);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.8;
+}
+
+a { color: var(--burgundy); }
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 22px 5%;
+    background: white;
+    border-bottom: 1px solid #f1e4e9;
+}
+
+.logo {
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.logo span { color: var(--rose); }
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: .9rem;
+}
+
+.article-hero {
+    background: var(--pink);
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.article-hero .inner {
+    max-width: 840px;
+    margin: auto;
+}
+
+.eyebrow {
+    color: var(--burgundy);
+    letter-spacing: .15em;
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+h1 {
+    color: var(--burgundy);
+    font-size: clamp(2.3rem, 6vw, 4.3rem);
+    line-height: 1.15;
+}
+
+.article-subtitle {
+    max-width: 650px;
+    margin: auto;
+    color: #624c58;
+    font-size: 1.15rem;
+}
+
+.article-meta {
+    color: var(--muted);
+    font-size: .85rem;
+}
+
+.article-content {
+    max-width: 780px;
+    margin: auto;
+    padding: 54px 24px 75px;
+}
+
+.article-content p { margin-bottom: 21px; }
+
+.article-content h2 {
+    color: var(--burgundy);
+    font-size: 1.7rem;
+    line-height: 1.3;
+    margin-top: 48px;
+}
+
+.article-media {
+    margin: 32px 0;
+    padding: 24px;
+    border: 1px solid #edd8e2;
+    border-radius: 16px;
+}
+
+.project-preview {
+    border: 2px dashed #d9a3ba;
+    background: #fff6f9;
+    border-radius: 12px;
+    padding: 42px 20px;
+    text-align: center;
+    color: var(--burgundy);
+    font-weight: bold;
+}
+
+.article-media figcaption {
+    color: var(--muted);
+    font-size: .88rem;
+    margin-top: 14px;
+}
+
+.project-link {
+    display: inline-block;
+    background: var(--burgundy);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    padding: 12px 22px;
+    font-weight: bold;
+}
+
+.article-takeaway {
+    border-left: 5px solid var(--rose);
+    background: var(--pink);
+    padding: 22px 26px;
+    margin: 35px 0;
+    border-radius: 0 12px 12px 0;
+    font-weight: bold;
+}
+
+.reader-question {
+    background: #f9eef3;
+    padding: 26px;
+    border-radius: 14px;
+    margin-top: 45px;
+}
+
+.reader-question h3 {
+    color: var(--burgundy);
+    margin-top: 0;
+}
+
+footer {
+    background: var(--burgundy);
+    color: white;
+    padding: 30px 5%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+footer a { color: white; }
+
+@media (max-width: 650px) {
+    .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .article-hero { padding: 52px 20px; }
+    .article-content { padding: 34px 20px; }
+}
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+    <a class="logo" href="../index.html">
+        Off the Beaten Path<span>.</span>
+    </a>
+
+    <nav>
+        <a href="../index.html#home">Home</a>
+        <a href="../index.html#journey">The Journey</a>
+        <a href="../index.html#articles">Field Notes</a>
+        <a href="../index.html#about">About</a>
+    </nav>
+</header>
+
+<main>
+
+<section class="article-hero">
+    <div class="inner">
+
+        <p>
+            <a href="../index.html#articles">
+                &larr; Back to Field Notes
+            </a>
+        </p>
+
+        <p class="eyebrow">
+            FIELD NOTE 03 · THE ROAD AHEAD
+        </p>
+
+        <h1>Beyond the Spreadsheet</h1>
+
+        <p class="article-subtitle">
+            Discovering how technology, creativity,
+            and collaboration can come together
+            in ways I never expected.
+        </p>
+
+        <p class="article-meta">
+            By Abreeana Rilveria
+        </p>
+
+    </div>
+</section>
+
+<article class="article-content">
+
+<p>
+When I first decided to major in computer science,
+I had a pretty specific idea of what my future career
+would look like. I pictured myself working as a
+software engineer, spending most of my time writing
+code and developing applications. At the time, I
+didn't really know what other opportunities existed
+for someone with a technical background.
+</p>
+
+<p>
+But as I've gotten further into college and gained
+more professional experience, I've realized that my
+interests don't necessarily fit into that traditional
+picture. I still enjoy technical work. I like solving
+problems, learning new tools, and figuring out how
+to use technology to make something better. What
+I've discovered, though, is that I especially enjoy
+doing those things in environments where I'm
+working with other people.
+</p>
+
+<p>
+Through my co-ops and academic projects, I've learned
+how much I value collaborating across teams,
+communicating ideas, and seeing how my work
+contributes to something larger than the task
+directly in front of me. Rather than moving away
+from computer science, I feel like I'm starting
+to understand how I want to use it.
+</p>
+
+<h2>Finding My Own Version of Technical Work</h2>
+
+<p>
+One of the things I've learned throughout college
+is that enjoying computer science doesn't necessarily
+mean enjoying every type of work that falls under it.
+For a long time, I thought that because I was studying
+computer science, I should naturally want to become
+a software engineer. It felt like the most obvious
+path, and I hadn't really considered what else
+I might enjoy.
+</p>
+
+<p>
+Over time, I've become more comfortable recognizing
+what I like and what I don't. I still prefer roles
+that challenge me technically, but I've realized
+that I don't necessarily want to spend my entire
+workday focused on coding independently. I enjoy
+being part of a team, collaborating with people
+from different areas of a business, and using
+technical skills to solve problems that affect
+more than one department.
+</p>
+
+<p>
+My co-op experiences have helped me understand
+that about myself. Whether I'm discussing a problem
+with coworkers, figuring out what information a
+team needs, or using data to support a decision,
+I enjoy the combination of technical thinking
+and communication.
+</p>
+
+<p>
+It's made me realize there isn't just one way to
+be a technical person. And I think that's important
+for students who feel like they're supposed to
+follow a particular career path because of
+their major.
+</p>
+
+<h2>When Data Becomes a Story</h2>
+
+<p>
+One academic experience that reinforced my interest
+in combining technical work with communication was
+my DS4200 data visualization final project. My
+group and I created a website exploring how
+socioeconomic factors relate to academic
+performance among students.
+</p>
+
+<p>
+We worked with a dataset that included exam scores
+alongside information about family income,
+parental involvement, access to educational
+resources, and study habits. Our goal was to
+explore relationships between these variables
+and communicate our findings through
+interactive visualizations.
+</p>
+
+<p>
+What I enjoyed most was getting to experience
+the entire process rather than focusing on one
+technical task. We started by cleaning and
+preparing the data so we could explore the
+questions we were interested in. From there,
+we built visualizations to help readers identify
+patterns and compare different groups of students.
+</p>
+
+<p>
+But the project didn't end once the charts were
+working. We had to decide which visuals were
+useful, how to organize them on the website,
+and how to explain what they showed to someone
+unfamiliar with the dataset. That was one
+of my favorite parts.
+</p>
+
+<p>
+For example, we explored how students with different
+socioeconomic backgrounds could have similar study
+habits while still showing differences in academic
+performance. Visualizing those relationships helped
+us communicate a more complete picture, while also
+reminding us that correlation alone doesn't explain
+why a difference exists.
+</p>
+
+<p>
+By the time we finished, we'd brought our analysis,
+visualizations, and explanations together into an
+interactive website. Seeing everything come
+together was rewarding because I knew how much
+work had gone into each step, from cleaning
+the data to designing the final page.
+</p>
+
+<p>
+That project reminded me that technical work can
+also be creative. It wasn't just about making
+a chart look nice or writing code that ran
+correctly. It was about turning a large amount
+of information into something another person
+could explore and understand.
+</p>
+
+<!-- DS4200 PROJECT SCREENSHOT -->
+
+<figure class="article-media">
+
+    <div class="project-preview">
+        Your DS4200 project screenshot goes here
+    </div>
+
+    <figcaption>
+        Our interactive student performance data
+        visualization project. Replace this
+        placeholder with a screenshot of
+        the actual website.
+    </figcaption>
+
+</figure>
+
+<p>
+    <a class="project-link"
+       href="https://rilveriaabreeana.github.io/ds4200-finalproject/"
+       target="_blank"
+       rel="noopener noreferrer">
+        Explore our DS4200 project &rarr;
+    </a>
+</p>
+
+<h2>Seeing Data From a Different Perspective</h2>
+
+<p>
+Another experience that has shaped my interests
+has been my co-op at New Balance. After working
+in operations analytics at Wayfair, I was excited
+to see how data could be used in a different
+industry and business model.
+</p>
+
+<p>
+At Wayfair, much of my work focused on suppliers,
+shipping performance, and operational processes
+in a dropship environment. At New Balance, I've
+gotten to learn more about merchandising and
+planning at a brand that develops and sells its
+own products. Even though both companies use
+analytics to make decisions, the questions their
+teams are trying to answer can look very different.
+</p>
+
+<p>
+One of my main projects at New Balance has involved
+building a Power BI dashboard for a team to compare
+forecasts with actual results. I've enjoyed that
+the work feels more front-end focused: I'm thinking
+not only about the data but also about how to
+organize it so the people using the dashboard
+can understand what they're seeing.
+</p>
+
+<p>
+Learning Power BI has also been valuable because
+it's a tool used widely in business analytics.
+It's been exciting to develop a new technical
+skill while seeing how it connects to the
+goals and milestones of a real business.
+</p>
+
+<p>
+Beyond the dashboard itself, I've learned more
+about how the company operates and how teams use
+data to evaluate plans and make adjustments.
+It's made me appreciate that an analysis becomes
+more useful when you understand the decisions
+people are trying to make with it.
+</p>
+
+<p>
+New Balance has definitely changed how I think
+about life after graduation. But rather than
+making me settle on one specific role, it's
+made me even more open to exploring what
+else is out there.
+</p>
+
+<h2>The Road Ahead</h2>
+
+<p>
+As I get closer to graduation, I've started
+thinking more seriously about what I want
+my career to look like. I have a better
+understanding of my interests than I did
+when I first started college, but I still
+don't have one specific role or industry
+that I'm set on pursuing. And I've realized
+that I'm okay with that.
+</p>
+
+<p>
+I've discovered that I enjoy working at the
+intersection of technology and business.
+I like using my technical background to
+solve problems, but I also enjoy working
+with different teams, understanding what
+people need, and helping turn information
+into action.
+</p>
+
+<p>
+Because of that, I've become interested
+in exploring product management, project
+management, and consulting alongside
+analytics. Those paths appeal to me because
+they involve collaborating with different
+people, approaching problems from multiple
+perspectives, and helping ideas move forward.
+</p>
+
+<p>
+I'm also keeping an open mind about industries.
+Before my first co-op, I never imagined myself
+working in supply chain operations, and I
+hadn't seriously considered merchandising
+and planning either. Yet both experiences
+taught me things I wouldn't have learned
+if I'd only pursued roles that sounded familiar.
+</p>
+
+<p>
+I still value the technical foundation I've
+built through computer science, and I know
+those skills will be useful wherever I end up.
+But I've learned that I don't have to limit
+myself to a traditional technical role because
+of what I chose to study.
+</p>
+
+<p>
+I may not know exactly what my career will
+look like five or ten years from now, but
+I'm becoming more comfortable with the idea
+that I don't need to. For now, I want to keep
+learning, challenging myself, and taking
+opportunities that help me grow, even if
+they lead somewhere I hadn't planned.
+</p>
+
+<p>
+And I think that's what being off the beaten
+path is really about.
+</p>
+
+<div class="article-takeaway">
+    <p>
+        There isn't just one way to build a
+        career with a computer science degree.
+    </p>
+</div>
+
+<aside class="reader-question">
+    <h3>Let's Keep the Conversation Going</h3>
+    <p>
+        Has a project, class, or job ever changed
+        how you imagined your future career?
+    </p>
+</aside>
+
+<p>
+    <a href="../index.html#articles">
+        &larr; Back to all Field Notes
+    </a>
+</p>
+
+</article>
+</main>
+
+<footer>
+    <span>
+        Off the Beaten Path · A career in progress,
+        not a straight line.
+    </span>
+
+    <a href="../index.html#home">
+        Back to the top &uarr;
+    </a>
+</footer>
+
+</body>
+</html>
